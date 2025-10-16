@@ -1,0 +1,18 @@
+Shortcodes i przykłady użycia
+
+[ads_login_form]
+  - Pokazuje formularz logowania lub informację o aktualnym użytkowniku.
+  - Przykład: wpisz [ads_login_form] w treści strony.
+
+[ads_frontend_form]
+  - Formularz dodawania ogłoszenia (tylko dla zalogowanych z rolą ads_user).
+  - Pola: tytuł, treść, category (slug).
+  - Przykład: [ads_frontend_form]
+
+[ads_my_ads]
+  - Lista moich ogłoszeń w tabeli (edycja i usuwanie).
+  - Przykład: [ads_my_ads]
+
+[ads_category_ads category_slug="slug" per_page="10"]
+  - Wyświetla ogłoszenia z danej kategorii.
+  - Przykład: [ads_category_ads category_id="przeprowadzki-elblag" per_page="10"]

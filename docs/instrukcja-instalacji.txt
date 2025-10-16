@@ -1,0 +1,20 @@
+Instrukcja instalacji i obsługi (krótka)
+
+1) Instalacja
+- W WordPress: Wtyczki -> Dodaj nową -> Wyślij wtyczkę na serwer -> wybierz ads-manager-plugin.zip -> Zainstaluj i aktywuj.
+
+2) Ustawienia
+- Po aktywacji w menu pojawi się "Zewnętrzne Ogłoszenia" (jeśli Twoje uprawnienia mają manage_options).
+- W razie potrzeby skonfiguruj klucze Stripe w ustawieniach (jeśli używasz integracji Stripe).
+
+3) Shortcodes
+- Zobacz plik shortcodes.txt w folderze docs.
+
+4) Testy
+- Możesz testować REST API przy pomocy curl/Postman (użyj endpointów /wp-json/ads/v1/*).
+
+5) Import/Export
+- Panel administracyjny posiada funkcje importu/eksportu CSV.
+
+6) Uwaga o uprawnieniach
+- Tylko użytkownicy z rolą ads_user mogą dodawać/edytować/usunąć ogłoszenia z frontendu (lub administratorzy).

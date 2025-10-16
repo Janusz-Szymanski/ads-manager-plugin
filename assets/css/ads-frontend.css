@@ -1,0 +1,31 @@
+/* ads-frontend.css - basic styling for shortcodes and modals */
+
+.ads-form {
+  max-width: 720px;
+  margin: 20px auto;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+.ads-form h3 { margin-top:0; margin-bottom:12px; font-size:1.15rem; }
+.ads-form input[type="text"], .ads-form textarea { width:100%; padding:8px; border:1px solid #ccc; border-radius:6px; margin-bottom:10px; }
+.ads-btn { display:inline-block; padding:8px 12px; background:#0073aa; color:#fff; border-radius:6px; border:none; cursor:pointer; }
+.ads-btn:hover { background:#006799; }
+
+.ads-table { width:100%; border-collapse:collapse; margin-top:12px; }
+.ads-table th, .ads-table td { border:1px solid #eee; padding:8px; text-align:left; vertical-align:top; }
+.ads-table thead th { background:#fafafa; font-weight:600; }
+
+.ads-category-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; }
+.ads-category-item { background:#fff; border:1px solid #eee; padding:12px; border-radius:8px; box-shadow:0 1px 4px rgba(0,0,0,0.03); }
+
+/* Modal styles */
+.ads-modal { position:fixed; left:0; top:0; width:100%; height:100%; display:flex; align-items:center; justify-content:center; z-index:9999; }
+.ads-modal .overlay { position:absolute; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.45); }
+.ads-modal .box { position:relative; background:#fff; padding:20px; border-radius:10px; width:90%; max-width:480px; box-shadow:0 8px 28px rgba(0,0,0,0.2); opacity:0; transform:translateY(-8px) scale(0.98); transition:opacity .18s ease, transform .18s ease; }
+.ads-modal.show .box { opacity:1; transform:translateY(0) scale(1); }
+.ads-modal .box h4 { margin:0 0 10px; }
+.ads-modal .box p { margin:0 0 12px; }
+.ads-modal .box .close { display:inline-block; padding:8px 12px; background:#0073aa; color:#fff; border-radius:6px; text-decoration:none; cursor:pointer; }
