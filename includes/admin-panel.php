@@ -7,6 +7,7 @@ add_action('admin_menu', function(){
     add_submenu_page('ads_manager', 'Płatności', 'Płatności', 'manage_options', 'ads_manager_payments', 'ads_manager_render_payments');
     add_submenu_page('ads_manager', 'Ustawienia', 'Ustawienia', 'manage_options', 'ads_manager_settings', 'ads_manager_render_settings');
     add_submenu_page('ads_manager', 'Import / Eksport', 'Import / Eksport', 'manage_options', 'ads_manager_import_export', 'ads_manager_render_import_export');
+    remove_submenu_page('ads_manager', 'ads_manager');
 });
 
 function ads_manager_render_ads(){
